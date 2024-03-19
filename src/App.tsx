@@ -1,5 +1,18 @@
+import Map from "./components/Map";
+import LocationSearch from "./components/LocationSearch";
+import type { Place } from "./api/Place";
+
 function App() {
-  return <></>;
+  return (
+    <div className="h-screen w-screen grid  grid-cols-12">
+      <div className="col-span-3 p-2">
+        <LocationSearch></LocationSearch>
+      </div>
+      <div className="col-span-9">
+        <Map></Map>
+      </div>
+    </div>
+  );
 }
 
 export default App;
